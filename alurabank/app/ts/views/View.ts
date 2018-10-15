@@ -1,8 +1,7 @@
-declare var $: any;
+namespace Views {
+export abstract class View<T> {
 
-abstract class View<T> {
-
-    protected _elemento: any;
+    protected _elemento: JQuery;
 
     constructor(seletor: string) {
 
@@ -16,4 +15,4 @@ abstract class View<T> {
 
     abstract template(model: T): string;
 }
-
+}

@@ -1,4 +1,6 @@
-class NegociacoesView extends View<Negociacoes> {
+namespace Views{
+import View = Views.View
+export class NegociacoesView extends View<Negociacoes> {
 
     template(model: Negociacoes): string {
 
@@ -31,4 +33,5 @@ class NegociacoesView extends View<Negociacoes> {
             </table>
         `;
     }
+}
 }
